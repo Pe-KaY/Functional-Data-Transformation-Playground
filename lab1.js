@@ -14,3 +14,12 @@ const reverseString = (str) => {
 }
 
 console.log(reverseString("howareyou"))
+
+// Is palindrone
+
+const isPalindrone = (str) => {
+  let strReversed = str.split("").reverse().join("")
+  return strReversed === str ? "It a palindrone" : "It not a palindrone"
+}
+
+console.log(isPalindrone("racecar"))
