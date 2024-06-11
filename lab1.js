@@ -23,3 +23,11 @@ const isPalindrone = (str) => {
 }
 
 console.log(isPalindrone("racecar"))
+
+// Word count in a string
+const wordCount = (str) => {
+  let arrOfString = str.split(" ")
+  return arrOfString.length
+}
+
+console.log(wordCount("my name is paakwesi"))
