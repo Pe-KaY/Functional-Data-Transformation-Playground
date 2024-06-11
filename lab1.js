@@ -31,3 +31,10 @@ const wordCount = (str) => {
 }
 
 console.log(wordCount("my name is paakwesi"))
+
+// Array Transformations
+const doubleNumberInArray = (arr) => {
+  return arr.map((num) => num * 2)
+}
+
+console.log(doubleNumberInArray([1, 2, 3, 4, 5]))
