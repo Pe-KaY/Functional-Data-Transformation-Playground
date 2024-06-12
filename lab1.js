@@ -122,3 +122,14 @@ const filterByAge = (people, minAge) => {
 }
 
 console.log(filterByAge([{ age: 3 }, { age: 7 }], 3))
+
+// Compose function
+const compose = (f, g) => (x) => f(g(x))
+
+const add2 = (x) => x + 2
+const add3 = (x) => x + 3
+
+// Composed function to add 2 and then add 3
+const add2ThenAdd3 = compose(add3, add2)
+
+console.log(add2ThenAdd3(5))
