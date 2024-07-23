@@ -1,6 +1,6 @@
 //  String Transformations
 // Capitalize frist Letter of a string
-const capitalize = (str) => {
+  function capitalize(str) {
   if (!str) {
     return "invalid input"
   }
@@ -17,7 +17,7 @@ const reverse = (str) => {
     return "invalid input"
   }
   let result = ""
-  for (let i = 0; i != 0; i--) {
+  for (let i = str.length - 1; i >= 0; i--) {
     result += str[i]
   }
   return result
@@ -133,3 +133,20 @@ const add3 = (x) => x + 3
 const add2ThenAdd3 = compose(add3, add2)
 
 console.log(add2ThenAdd3(5))
+
+module.exports = {
+  capitalize,
+  reverse,
+  isPalindrome,
+  wordCount,
+  double,
+  filterEven,
+  sum,
+  average,
+  fullName,
+  isAdult,
+  filterByAge,
+  compose,
+  add2,
+  add3
+}
